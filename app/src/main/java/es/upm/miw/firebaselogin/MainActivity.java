@@ -53,9 +53,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
                                             new AuthUI.IdpConfig.EmailBuilder().build()
                                     )).
                                     setIsSmartLockEnabled(!BuildConfig.DEBUG /* credentials */, true /* hints */).
+                                    //setIsSmartLockEnabled(!BuildConfig.DEBUG /* credentials */, true /* hints */).
                                     build(),
                                     RC_SIGN_IN
                     );
+
+                    //Remains logged in when unique gmail account
+                    // setIsSmartLockEnabled(!BuildConfig.DEBUG /* credentials */, true /* hints */).
+                    //setIsSmartLockEnabled(BuildConfig.DEBUG /* credentials */, true /* hints */).
+
                 }
             }
         };
