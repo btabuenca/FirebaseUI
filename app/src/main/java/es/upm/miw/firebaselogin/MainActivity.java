@@ -18,12 +18,12 @@ import java.util.Arrays;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-    final static String LOG_TAG = "MiW";
+    final static String LOG_TAG = "btb";
 
     private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
 
-    private static final int RC_SIGN_IN = 2018;
+    private static final int RC_SIGN_IN = 2022;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
